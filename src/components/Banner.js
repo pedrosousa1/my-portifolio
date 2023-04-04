@@ -7,10 +7,10 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(200 - Math.random() * 100);
   const [, setIndex] = useState(1);
   const toRotate = ["Desenvolvedor Web"];
-  const period = 2000;
+  const period = 5000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -50,6 +50,20 @@ export const Banner = () => {
     }
   };
 
+  const redirecionarParaWhatsapp = () => {
+    var numeroDeTelefone = "13991058048";
+    var mensagem = "Olá! Pedro, tudo bem? Vim pelo seu portifólio!";
+    var numeroDeTelefoneAPI = numeroDeTelefone.replace(/[^\d]/g, "");
+
+    window.open(
+      "https://api.whatsapp.com/send?phone=" +
+        numeroDeTelefoneAPI +
+        "&text=" +
+        encodeURIComponent(mensagem),
+      "_blank"
+    );
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -67,7 +81,7 @@ export const Banner = () => {
               principal framework de trabalho atualmente é React TS no
               front-end.
             </p>
-            <button onClick={() => console.log("connect")}>
+            <button onClick={redirecionarParaWhatsapp}>
               Vamos se conectar! <ArrowRightCircle size={25} />
             </button>
           </Col>
