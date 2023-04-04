@@ -106,7 +106,7 @@ export const NavBar = () => {
               </a>
             </div>
             <button className="vvd" onClick={redirecionarParaWhatsapp}>
-              <span>Vamos se conectar!</span>
+              <span>Vamos nos conectar!</span>
             </button>
           </span>
         </Navbar.Collapse>

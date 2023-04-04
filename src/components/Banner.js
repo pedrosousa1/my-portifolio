@@ -82,7 +82,7 @@ export const Banner = () => {
               front-end.
             </p>
             <button onClick={redirecionarParaWhatsapp}>
-              Vamos se conectar! <ArrowRightCircle size={25} />
+              Vamos nos conectar! <ArrowRightCircle size={25} />
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
