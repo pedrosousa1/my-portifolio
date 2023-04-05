@@ -1,4 +1,4 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import construtora from "../assets/img/construtora.png";
 import toDo from "../assets/img/to-do.png";
@@ -70,7 +70,7 @@ export const Projects = () => {
                     Integração de API foi utilizado o cliente HTTP Axios.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav
+                    {/* <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center"
                       id="pills-tab"
@@ -84,7 +84,7 @@ export const Projects = () => {
                       <Nav.Item>
                         <Nav.Link eventKey="third">Tab 3</Nav.Link>
                       </Nav.Item>
-                    </Nav>
+                    </Nav> */}
                     <Tab.Content
                       id="slideInUp"
                       className={
